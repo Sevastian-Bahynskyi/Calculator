@@ -1,0 +1,44 @@
+.button{
+    -fx-background-color: #FCA311;
+    -fx-text-fill: #000000;
+  }
+  
+  .button:hover{
+    -fx-background-color: #ffc12f;
+  }
+
+  #mainPane{
+    -fx-font-size: 30;
+  }
+
+  .text-field{
+    -fx-background-color: #14213D;
+    -fx-text-fill: #ffffff;
+    -fx-background-radius: 0em;
+  }
+  #text-field{
+    -fx-font-size: 20;
+    -fx-text-fill: #b7b7b7;
+  }
+  
+  #button-operator{
+    -fx-background-color: #3D2704;
+    -fx-text-fill: #ffffff;
+  }
+  
+  #button-operator:hover{
+    -fx-background-color: #5b4522;
+  }
+  
+  #button-delete{
+    -fx-background-color: #7D5009;
+    -fx-text-fill: #ffffff;
+  }
+  
+  #button-delete:hover{
+    -fx-background-color: #9b6e27;
+  }
+
+  #backgroundPane{
+    -fx-background-color: #14213D;
+  }

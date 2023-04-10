@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+
+<Pane id="backgroundPane" fx:id="backgroundPane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Calculator.Controller">
+   <children>
+      <VBox id="mainPane" fx:id="mainPane" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" stylesheets="@style.css">
+         <children>
+            <GridPane fx:id="contentPane" alignment="CENTER" hgap="2.0" prefHeight="70.0" prefWidth="70.0" vgap="2.0">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints fillHeight="false" />
+                  <RowConstraints maxHeight="70.0" minHeight="70.0" prefHeight="70.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="70.0" minHeight="70.0" prefHeight="70.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="70.0" minHeight="70.0" prefHeight="70.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="70.0" minHeight="70.0" prefHeight="70.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="70.0" minHeight="70.0" prefHeight="70.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="70.0" minHeight="70.0" prefHeight="70.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button id="button-operator" fx:id="buttonDivide" mnemonicParsing="false" onAction="#handleClickButton" onKeyPressed="#handleKeyEvent" prefHeight="70.0" prefWidth="70.0" text="/" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <Button id="button-delete" fx:id="buttonRemoveOne" mnemonicParsing="false" onAction="#handleClickButton" onKeyPressed="#handleKeyEvent" prefHeight="70.0" prefWidth="70.0" text="C" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <Button fx:id="button7" mnemonicParsing="false" onAction="#handleClickButton" onKeyPressed="#handleKeyEvent" prefHeight="70.0" prefWidth="70.0" text="7" GridPane.rowIndex="3" />
+                  <Button fx:id="button8" mnemonicParsing="false" onAction="#handleClickButton" onKeyPressed="#handleKeyEvent" prefHeight="70.0" prefWidth="70.0" text="8" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Button fx:id="button9" mnemonicParsing="false" onAction="#handleClickButton" onKeyPressed="#handleKeyEvent" prefHeight="70.0" prefWidth="70.0" text="9" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <Button id="button-operator" fx:id="buttonMultiply" mnemonicParsing="false" onAction="#handleClickButton" onKeyPressed="#handleKeyEvent" prefHeight="70.0" prefWidth="70.0" text="*" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                  <Button fx:id="button4" mnemonicParsing="false" onAction="#handleClickButton" onKeyPressed="#handleKeyEvent" prefHeight="70.0" prefWidth="70.0" text="4" GridPane.rowIndex="4" />
+                  <Button fx:id="button5" mnemonicParsing="false" onAction="#handleClickButton" onKeyPressed="#handleKeyEvent" prefHeight="70.0" prefWidth="70.0" text="5" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Button fx:id="button6" mnemonicParsing="false" onAction="#handleClickButton" onKeyPressed="#handleKeyEvent" prefHeight="70.0" prefWidth="70.0" text="6" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                  <Button id="button-operator" fx:id="buttonSubtract" mnemonicParsing="false" onAction="#handleClickButton" onKeyPressed="#handleKeyEvent" prefHeight="70.0" prefWidth="70.0" text="-" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                  <Button fx:id="button1" mnemonicParsing="false" onAction="#handleClickButton" onKeyPressed="#handleKeyEvent" prefHeight="70.0" prefWidth="70.0" text="1" GridPane.rowIndex="5" />
+                  <Button fx:id="button2" mnemonicParsing="false" onAction="#handleClickButton" onKeyPressed="#handleKeyEvent" prefHeight="70.0" prefWidth="70.0" text="2" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <Button fx:id="button3" mnemonicParsing="false" onAction="#handleClickButton" onKeyPressed="#handleKeyEvent" prefHeight="70.0" prefWidth="70.0" text="3" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                  <Button id="button-operator" fx:id="buttonAdd" mnemonicParsing="false" onAction="#handleClickButton" onKeyPressed="#handleKeyEvent" prefHeight="70.0" prefWidth="70.0" text="+" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                  <Button fx:id="button0" mnemonicParsing="false" onAction="#handleClickButton" onKeyPressed="#handleKeyEvent" prefHeight="70.0" prefWidth="70.0" text="0" GridPane.rowIndex="6" />
+                  <Button fx:id="buttonComma" mnemonicParsing="false" onAction="#handleClickButton" onKeyPressed="#handleKeyEvent" prefHeight="70.0" prefWidth="70.0" text="," GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <Button id="button-operator" fx:id="buttonEquals" mnemonicParsing="false" onAction="#handleClickButton" onKeyPressed="#handleKeyEvent" prefHeight="70.0" prefWidth="142.5" text="=" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="6" />
+                  <Button id="button-delete" fx:id="buttonDelete" mnemonicParsing="false" onAction="#handleClickButton" onKeyPressed="#handleKeyEvent" prefHeight="70.0" prefWidth="142.5" text="DEL" GridPane.columnSpan="2" GridPane.rowIndex="2" />
+                  <TextField fx:id="tempTextField" editable="false" prefHeight="68.5" prefWidth="240.0" GridPane.columnSpan="4" GridPane.rowIndex="1" />
+                  <TextField id="text-field" fx:id="textField" editable="false" prefWidth="280.0" GridPane.columnSpan="4" />
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+   </children>
+</Pane>
